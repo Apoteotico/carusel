@@ -1,0 +1,38 @@
+/* Carousel.css */
+.carousel {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.carousel img {
+  width: 100%;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.carousel img:hover {
+  transform: scale(1.1);
+}
+
+button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  font-size: 2em;
+  cursor: pointer;
+}
+
+button:hover {
+  color: #d12f81; /* Cambia el color al pasar el mouse sobre los botones */
+}
+
+button:first-child {
+  left: 10px;
+}
+
+button:last-child {
+  right: 10px;
+}
